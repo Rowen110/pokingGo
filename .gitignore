@@ -1,0 +1,7 @@
+target/
+.idea
+*.iml
+
+flume-hbase-extends-sink/target
+flume-hbase-extends-sink/.idea
+flume-hbase-extends-sink/*.iml

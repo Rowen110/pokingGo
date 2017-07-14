@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.github.talefairy</groupId>
+  <artifactId>pokingGo</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>flume-hbase-extends-sink</module>
+  </modules>
+  <packaging>pom</packaging>
+
+  <name>pokingGo</name>
+  <url>http://maven.apache.org</url>
+
+  <developers>
+    <developer>
+      <id>9080</id>
+      <name>supoMan</name>
+      <email>915900175@qq.com</email>
+    </developer>
+  </developers>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <hbase.version>1.3.1</hbase.version>
+    <flume.version>1.7.0</flume.version>
+    <zookeeper.version>3.4.10</zookeeper.version>
+    <fastJson.version>1.2.34</fastJson.version>
+    <hadoop.version>2.6.1</hadoop.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- Flume -->
+      <dependency>
+        <groupId>org.apache.flume</groupId>
+        <artifactId>flume-ng-core</artifactId>
+        <version>${flume.version}</version>
+      </dependency>
+      <!-- Hbase -->
+      <dependency>
+        <groupId>org.apache.hbase</groupId>
+        <artifactId>hbase-client</artifactId>
+        <version>${hbase.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.hbase</groupId>
+        <artifactId>hbase-server</artifactId>
+        <version>${hbase.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.hbase</groupId>
+        <artifactId>hbase-common</artifactId>
+        <version>${hbase.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-minicluster</artifactId>
+        <version>${hadoop.version}</version>
+      </dependency>
+      <!-- Zookeeper -->
+      <dependency>
+        <groupId>org.apache.zookeeper</groupId>
+        <artifactId>zookeeper</artifactId>
+        <version>${zookeeper.version}</version>
+      </dependency>
+      <!-- Fastjson -->
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>${fastJson.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>
