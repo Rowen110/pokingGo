@@ -5,3 +5,6 @@ target/
 flume-hbase-extends-sink/target
 flume-hbase-extends-sink/.idea
 flume-hbase-extends-sink/*.iml
+
+hdfs-data-compress/target
+hdfs-data-compress/*.iml
