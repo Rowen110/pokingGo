@@ -1,6 +1,7 @@
-################## flume-hbase-extends-sink ####################
-    1. Flume Sink 源码分析并扩展
-    
-    
-################## hdfs-data-compress ####################
-    1. com.github.talefairy.GzipCompress :    HDFS数据解/压缩
+## **背景**
+主要用于技术源码分析
+
+
+## **模块介绍**
+1. flume-hbase-extends-sink  Flume源码分析和扩展
+2. hdfs-data-compress  HDFS数据解/压缩
